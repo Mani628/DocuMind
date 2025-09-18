@@ -1,10 +1,5 @@
-# 🤖 Smart AI Agent: RAG, Web Search & LangGraph
+# 🤖 DocuMind: RAG, Web Search & LangGraph
 
-![Smart AI Agent Thumbnail](assets/agentBot.png)
-
-🔗 **[Download Project PDF](assets/agentBot.pdf)**
-
----
 
 This repository contains the code for a sophisticated AI Agent application capable of answering user queries by intelligently leveraging both a private, custom knowledge base (using Retrieval-Augmented Generation - RAG) and real-time web search. Users have granular control over the web search feature, enhancing flexibility and transparency.
 
@@ -175,19 +170,6 @@ streamlit run frontend/app.py
   ]
 }
 ```
-
----
-
-## 🚀 Future Improvements
-
-- Integrate tools: calculator, calendar, code interpreter
-- Stream LLM output token-by-token
-- Advanced RAG techniques: reranking, multi-query
-- Long-term memory database for chat history
-- User authentication & profiles
-- Enhanced UI: dark mode, animations, custom themes
-
----
 
 ## 📬 Feedback & Contributions
 
