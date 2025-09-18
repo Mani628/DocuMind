@@ -1,41 +1,45 @@
-# 🤖 DocuMind: RAG, Web Search & LangGraph
+# 🤖 DocuMind: LangGraph-Powered Hybrid RAG and Real-Time Search Agent
 
 
-This repository contains the code for a sophisticated AI Agent application capable of answering user queries by intelligently leveraging both a private, custom knowledge base (using Retrieval-Augmented Generation - RAG) and real-time web search. Users have granular control over the web search feature, enhancing flexibility and transparency.
+This repository hosts the code for **DocuMind**, an advanced AI Agent application designed to answer user queries by seamlessly integrating a private knowledge base (via Retrieval-Augmented Generation - RAG) with real-time web search. The system gives users full control over when to use online search, ensuring both flexibility and transparency.
 
 ---
 
 ## ✨ Key Features
 
-- **Hybrid AI & Intelligent Routing**: Combines internal RAG knowledge with real-time web search, dynamically selecting the best information source for each query.
+- **Hybrid Intelligence & Smart Routing**: Automatically determines whether to use internal RAG knowledge or external web search for each query..
 
-- **User-Controlled Web Access**: Provides a UI toggle to enable or disable web search, allowing users to choose between internal-only knowledge or broader internet access.
+- **User-Controlled Web Search**: Simple UI toggle to enable/disable internet access, letting users choose between private-only knowledge or extended real-time search..
 
-- **Transparent AI Workflow (Agent Trace)**: Offers a detailed, step-by-step trace of the agent's internal thought process, including routing decisions, RAG sufficiency verdicts, and information retrieval summaries.
+- **Transparent AI Thought Process (Agent Trace)**: Displays a step-by-step breakdown of the agent’s reasoning, routing decisions, and retrieved context, ensuring clear insights into the AI’s workflow.
 
-- **Contextual RAG Sufficiency Judgment**: Employs an LLM to critically assess if retrieved RAG content is sufficient to answer a query, preventing incomplete responses and prompting further search if needed.
+- **Context-Aware Sufficiency Detection**: LLM-powered judgment verifies whether RAG results are enough to answer a query, and falls back to web search if needed to avoid incomplete answers.
 
 - **Dynamic Knowledge Ingestion (PDF Upload)**: Users can upload PDF documents directly, which are automatically processed, embedded, and added to the agent's Pinecone knowledge base.
 
-- **Modular & Extensible Design**: Clean, layered architecture (FastAPI, LangGraph, Streamlit) makes it easy to understand, debug, and expand.
+-  **Extensible Modular Architecture**: Organized into layers (FastAPI, LangGraph, Streamlit) that are easy to debug, scale, and enhance.
 
-- **Persistent Conversation Memory**: LangGraph's checkpointing maintains conversation context across multiple turns.
+-  **Persistent Conversation Memory**: LangGraph checkpointing preserves session context across multiple user-agent interactions.
 
 ---
-
+  
 ## 🚀 High-Level Architecture
 
-### 🧩 Layers Overview:
+## 🧩 System Layers
 
-- **User Interface (UI)**: Streamlit app for interaction.
-- **API Layer**: FastAPI backend that receives and handles requests.
-- **Agent Core**: LangGraph-powered AI logic with routing and tools.
-- **Knowledge Base**: Pinecone vector DB + HuggingFace embeddings.
-- **External Tools**: Groq LLM, Tavily Search API.
+- **Frontend (UI)**: Streamlit interface for seamless interaction.
+    
+- **API Layer**: FastAPI backend that manages requests and responses.
+    
+- **Agent Core**: LangGraph-driven orchestration for reasoning and routing.
+    
+- **Knowledge Base**: Pinecone vector database with HuggingFace embeddings.
+    
+- **External Tools**: Groq LLM and Tavily Search API for enhanced intelligence.
 
 ---
 
-## 📦 Core Modules Structure
+## 📦  Project Structure
 
 ```
 agentBot/
@@ -170,9 +174,3 @@ streamlit run frontend/app.py
   ]
 }
 ```
-
-## 📬 Feedback & Contributions
-
-Feel free to open issues or PRs for suggestions, bugs, or enhancements.
-
-> Built with ❤️ using LangGraph, LangChain, Groq, and Streamlit
