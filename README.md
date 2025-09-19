@@ -75,7 +75,7 @@ PDFs are split, embedded, stored in Pinecone, and served for lightning-fast cont
 ## 📦  Project Structure
 
 ```
-agentBot/
+DocuMind/
 ├── frontend/
 │   ├── app.py                  # Streamlit entry point
 │   ├── ui_components.py       # Chat UI, toggle, trace
@@ -123,15 +123,31 @@ agentBot/
 
 - Pinecone index: `rag-index` with 384 dimensions and cosine metric
 
-### Installation
+---
+
+### 🚀 Installation
 
 ```bash
-git clone https://github.com/your-username/agentBot.git
-cd rag_agent_app
+# Clone the repository
+git clone https://github.com/Mani628/DocuMind.git
+
+# Move into the project directory
+cd DocuMind
+
+# Create a virtual environment
 uv venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
+# Activate the virtual environment
+# On Linux / macOS
+source .venv/bin/activate
+# On Windows
+.venv\Scripts\activate
+
+# Install dependencies
 uv pip install -r requirements.txt
 ```
+
+---
 
 Create a `.env` file at project root:
 
