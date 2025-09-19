@@ -3,8 +3,9 @@
 
 This repository hosts the code for **DocuMind**, an advanced AI Agent application designed to answer user queries by seamlessly integrating a private knowledge base (via Retrieval-Augmented Generation - RAG) with real-time web search. The system gives users full control over when to use online search, ensuring both flexibility and transparency.
 
-
-![DocuMind Logo](Images/DocuMind-Logo.png)
+<p align="center">
+  <img src="Images/DocuMind-Logo.png" alt="DocuMind Logo" width="450" height="600">
+</p>
 
 ---
 
@@ -39,6 +40,16 @@ This repository hosts the code for **DocuMind**, an advanced AI Agent applicatio
 - **Knowledge Base**: Pinecone vector database with HuggingFace embeddings.
     
 - **External Tools**: Groq LLM and Tavily Search API for enhanced intelligence.
+
+---
+
+## AI Agent Workflow
+
+The system uses LangGraph to evaluate whether the available context is sufficient. Based on this assessment, it intelligently routes queries to either the embedded RAG pipeline or live web search, while maintaining complete and transparent trace logs.
+
+<p align="center">
+  <img src="Images/agent_workflow.png" alt="Agent Workflow" width="450" height="600">
+</p>
 
 ---
 
