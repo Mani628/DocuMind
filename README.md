@@ -3,6 +3,9 @@
 
 This repository hosts the code for **DocuMind**, an advanced AI Agent application designed to answer user queries by seamlessly integrating a private knowledge base (via Retrieval-Augmented Generation - RAG) with real-time web search. The system gives users full control over when to use online search, ensuring both flexibility and transparency.
 
+
+![DocuMind Logo](Images/DocuMind-Logo.png)
+
 ---
 
 ## ✨ Key Features
