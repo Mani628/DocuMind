@@ -43,12 +43,31 @@ This repository hosts the code for **DocuMind**, an advanced AI Agent applicatio
 
 ---
 
+## Application Workflow
+The end-to-end workflow includes: session initialization → query intake → intelligent routing → RAG or web search → answer composition → trace logging → response delivery to the UI.
+
+<p align="center">
+  <img src="Images/application-workflow.png" alt="Application Workflow" width="550" height="650">
+</p>
+
+---
+
 ## AI Agent Workflow
 
 The system uses LangGraph to evaluate whether the available context is sufficient. Based on this assessment, it intelligently routes queries to either the embedded RAG pipeline or live web search, while maintaining complete and transparent trace logs.
 
 <p align="center">
-  <img src="Images/agent_workflow.png" alt="Agent Workflow" width="450" height="600">
+  <img src="Images/agent_workflow.png" alt="Agent Workflow" width="350" height="500">
+</p>
+
+---
+
+## RAG Pipeline 
+
+PDFs are split, embedded, stored in Pinecone, and served for lightning-fast contextual retrieval on demand.
+
+<p align="center">
+  <img src="Images/RAG.png" alt="RAG" width="900" height="600">
 </p>
 
 ---
